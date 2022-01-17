@@ -22,7 +22,7 @@ if [ "$result_count" -lt 1 ]; then
         "subtitle": "Try with another keyword",
         "arg": "-1",
         "icon": {
-            "path": "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns"
+            "path": "./icons/alert.png"
         }
     }
 ]}'
