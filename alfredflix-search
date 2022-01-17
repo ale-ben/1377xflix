@@ -1,0 +1,70 @@
+mkdir -p $HOME/.cache/notflix
+
+baseurl="https://www.1377x.to"
+cachedir="$HOME/.cache/notflix"
+
+ query=$1
+
+query="$(echo $query | sed 's/ /+/g')"
+
+#curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
+curl -s $baseurl/search/$query/1/ >$cachedir/tmp.html
+
+# Get Titles
+grep -o '<a href="/torrent/.*</a>' $cachedir/tmp.html |
+	sed 's/<[^>]*>//g' >$cachedir/titles.bw
+
+result_count=$(wc -l $cachedir/titles.bw | awk '{print $1}')
+if [ "$result_count" -lt 1 ]; then
+	res='{"items": [
+    {
+        "title": "No movie found :(",
+        "subtitle": "Try with another keyword",
+        "arg": "-1",
+        "icon": {
+            "path": "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns"
+        }
+    }
+]}'
+	echo "$res"
+	exit 0
+fi
+
+# Seeders and Leechers
+grep -o '<td class="coll-2 seeds.*</td>\|<td class="coll-3 leeches.*</td>' $cachedir/tmp.html |
+	sed 's/<[^>]*>//g' | sed 'N;s/\n/ /' >$cachedir/seedleech.bw
+
+# Size
+grep -o '<td class="coll-4 size.*</td>' $cachedir/tmp.html |
+	sed 's/<span class="seeds">.*<\/span>//g' |
+	sed -e 's/<[^>]*>//g' >$cachedir/size.bw
+
+# Links
+grep -E '/torrent/' $cachedir/tmp.html |
+	sed -E 's#.*(/torrent/.*)/">.*/#\1#' |
+	sed 's/td>//g' >$cachedir/links.bw
+
+# Clearning up some data to display
+sed 's/\./ /g; s/\-/ /g' $cachedir/titles.bw |
+	sed 's/[^A-Za-z0-9 ]//g' | tr -s " " >$cachedir/tmp && mv $cachedir/tmp $cachedir/titles.bw
+
+awk '{print NR " - ["$0"]"}' $cachedir/size.bw >$cachedir/tmp && mv $cachedir/tmp $cachedir/size.bw
+awk '{print "[S:"$1 ", L:"$2"]" }' $cachedir/seedleech.bw >$cachedir/tmp && mv $cachedir/tmp $cachedir/seedleech.bw
+
+# Formatting the output string
+input=$(paste -d \| $cachedir/size.bw $cachedir/seedleech.bw $cachedir/titles.bw)
+
+json='{"items": ['
+
+i=1
+while [ $i -le 20 ]; do
+	title=$(sed "$i!d;q" "$cachedir/titles.bw")
+	size=$(sed "$i!d;q" "$cachedir/size.bw")
+	seedleech=$(sed "$i!d;q" "$cachedir/seedleech.bw")
+	jsonobj="{\"title\": \"$title\",\"subtitle\": \"$size\",\"arg\": \"$i\",\"icon\": {\"path\": \"/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/SidebarMoviesFolder.icns\"}},"
+	json=$json$jsonobj
+	let "i+=1"
+done
+
+json=$json"]}"
+echo "$json"

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Dependencies - webtorrent, mpv
+
+mkdir -p $HOME/.cache/notflix
+
+baseurl="https://www.1377x.to"
+cachedir="$HOME/.cache/notflix"
+
+pos=$1
+
+url=$(sed "$pos!d;q" "$cachedir/links.bw")
+fullURL="${baseurl}${url}/"
+
+# Requesting page for magnet link
+curl -s $fullURL > $cachedir/tmp.html
+
+
+#magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1) 
+magnet=$(perl -nle'print $& while m{magnet:\?xt=urn:btih:[a-zA-Z0-9]*}g' $cachedir/tmp.html | head -n 1) 
+
+printf "%s" "$magnet"
+#webtorrent "$magnet" --mpv
