@@ -1,14 +1,15 @@
-mkdir -p $HOME/.cache/notflix
+cachedir="/tmp/alfredflix-cache"
+mkdir -p $cachedir
 
-baseurl="https://www.1377x.to"
-cachedir="$HOME/.cache/notflix"
-
- query=$1
+baseurl="$1"
+page="$2"
+query="$3"
 
 query="$(echo $query | sed 's/ /+/g')"
-
+finalURL=$baseurl/search/$query/$page/
 #curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
-curl -s $baseurl/search/$query/1/ >$cachedir/tmp.html
+
+curl -s $finalURL >$cachedir/tmp.html
 
 # Get Titles
 grep -o '<a href="/torrent/.*</a>' $cachedir/tmp.html |
@@ -16,17 +17,16 @@ grep -o '<a href="/torrent/.*</a>' $cachedir/tmp.html |
 
 result_count=$(wc -l $cachedir/titles.bw | awk '{print $1}')
 if [ "$result_count" -lt 1 ]; then
-	res='{"items": [
+	echo "{\"items\": [
     {
-        "title": "No movie found :(",
-        "subtitle": "Try with another keyword",
-        "arg": "-1",
-        "icon": {
-            "path": "./icons/alert.png"
+        \"title\": \"No movie found with keyword $query :(\",
+        \"subtitle\": \"Try with another keyword\",
+        \"arg\": \"-1\",
+        \"icon\": {
+            \"path\": \"icons/alert.png\"
         }
     }
-]}'
-	echo "$res"
+]}"
 	exit 0
 fi
 
@@ -54,17 +54,44 @@ awk '{print "[S:"$1 ", L:"$2"]" }' $cachedir/seedleech.bw >$cachedir/tmp && mv $
 # Formatting the output string
 input=$(paste -d \| $cachedir/size.bw $cachedir/seedleech.bw $cachedir/titles.bw)
 
-json='{"items": ['
+nextPage=$page
+let "nextPage+=1"
+prevPage=$page
+let "prevPage-=1"
+
+json="{\"items\": [{
+        \"title\": \"Previous page\",
+        \"subtitle\": \"Page $prevPage\",
+        \"arg\": \"prevPage\",
+        \"icon\": {
+            \"path\": \"icons/alert.png\"
+        }
+},"
 
 i=1
 while [ $i -le 20 ]; do
 	title=$(sed "$i!d;q" "$cachedir/titles.bw")
 	size=$(sed "$i!d;q" "$cachedir/size.bw")
 	seedleech=$(sed "$i!d;q" "$cachedir/seedleech.bw")
-	jsonobj="{\"title\": \"$title\",\"subtitle\": \"$size\",\"arg\": \"$i\",\"icon\": {\"path\": \"/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/SidebarMoviesFolder.icns\"}},"
+	jsonobj="{
+        \"title\": \"$title\",
+        \"subtitle\": \"Page $page - $size - $seedleech\",
+        \"arg\": \"$i\",
+        \"icon\": {
+            \"path\": \"/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/SidebarMoviesFolder.icns\"
+        }
+	},"
 	json=$json$jsonobj
 	let "i+=1"
 done
 
-json=$json"]}"
+json=$json"{
+        \"title\": \"Next page\",
+        \"subtitle\": \"Page $nextPage\",
+        \"arg\": \"nextPage\",
+        \"icon\": {
+            \"path\": \"icons/alert.png\"
+        }
+	}]}"
+
 echo "$json"

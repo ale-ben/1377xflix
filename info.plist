@@ -8,8 +8,85 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>01885340-0A10-4A39-B7CB-3EA1281A10B1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C5C89C0-0F6C-4454-B156-8BD234C389FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F248026A-A988-4683-8571-2C84BFF9B520</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5C5C89C0-0F6C-4454-B156-8BD234C389FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>01885340-0A10-4A39-B7CB-3EA1281A10B1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A869E6AB-68D5-4A34-A32C-40A5199FAA06</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>C7186F54-B3B2-407E-8FE5-EF773C748A90</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</string>
@@ -35,7 +112,30 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>44C3BE8A-A7D6-4C63-9F15-7613B127C51C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CDDB6106-0481-4CE6-AEEC-4C72752E456B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,21 +158,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Lauching Stream</string>
-				<key>title</key>
-				<string>Alfredflix</string>
+				<key>largetypetext</key>
+				<string>{var:page}
+{var:input}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
-			<string>67A46815-EE5E-470B-9458-3C2D89B0C725</string>
+			<string>CDDB6106-0481-4CE6-AEEC-4C72752E456B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>alfredinfo</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Alfredflix info</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -84,7 +214,9 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./alfredflix-link $1</string>
+				<string>page=$page
+let "page+=1"
+echo $page</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -95,9 +227,92 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</string>
+			<string>5C5C89C0-0F6C-4454-B156-8BD234C389FE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>page</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>01885340-0A10-4A39-B7CB-3EA1281A10B1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>page=$page
+let "page+=1"
+
+osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
+    set configuration \"page\" to value \"$page\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
+end tell"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>alfredflix {var:input}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>F248026A-A988-4683-8571-2C84BFF9B520</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -127,9 +342,13 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>./alfredflix-search "{query}"</string>
+				<string>osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
+    set configuration \"input\" to value \"$1\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
+end tell"
+
+./alfredflix-search $baseURL $page $1</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -151,10 +370,113 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Lauching Stream</string>
+				<key>title</key>
+				<string>Alfredflix</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>67A46815-EE5E-470B-9458-3C2D89B0C725</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>nextPage</string>
+						<key>outputlabel</key>
+						<string>Next Page</string>
+						<key>uid</key>
+						<string>C7186F54-B3B2-407E-8FE5-EF773C748A90</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./alfredflix-link $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
+    set configuration \"page\" to value \"1\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
+end tell"
+
+osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
+    set configuration \"input\" to value \"\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
+end tell"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>webtorrent "{query}" --mpv</string>
+				<string>webtorrent "{query}" --{var:defaultPlayer}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
@@ -168,40 +490,116 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>44C3BE8A-A7D6-4C63-9F15-7613B127C51C</key>
+		<key>01885340-0A10-4A39-B7CB-3EA1281A10B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>40</integer>
+		</dict>
+		<key>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>245</integer>
+		</dict>
+		<key>44C3BE8A-A7D6-4C63-9F15-7613B127C51C</key>
+		<dict>
+			<key>note</key>
+			<string>Lauching webtorrent stream</string>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</key>
+		<dict>
+			<key>note</key>
+			<string>Workflow variable reset</string>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>460</integer>
+		</dict>
+		<key>5C5C89C0-0F6C-4454-B156-8BD234C389FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>67A46815-EE5E-470B-9458-3C2D89B0C725</key>
 		<dict>
 			<key>xpos</key>
-			<integer>730</integer>
+			<integer>680</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>335</integer>
+		</dict>
+		<key>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>275</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>A869E6AB-68D5-4A34-A32C-40A5199FAA06</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>325</integer>
+		</dict>
+		<key>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</key>
+		<dict>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>345</integer>
 		</dict>
 		<key>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>385</integer>
+		</dict>
+		<key>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>CDDB6106-0481-4CE6-AEEC-4C72752E456B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>F248026A-A988-4683-8571-2C84BFF9B520</key>
+		<dict>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>275</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
+	<key>variables</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://www.1377x.to</string>
+		<key>defaultPlayer</key>
+		<string>mpv</string>
+		<key>input</key>
+		<string></string>
+		<key>page</key>
+		<string>1</string>
+	</dict>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.1.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/ale-ben/Alfredflix</string>
 </dict>
 </plist>
