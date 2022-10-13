@@ -8,11 +8,11 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>01885340-0A10-4A39-B7CB-3EA1281A10B1</key>
+		<key>05C66F0C-901F-4BCB-9014-9E0708276890</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5C5C89C0-0F6C-4454-B156-8BD234C389FE</string>
+				<string>49CD2E55-9242-4D08-80E1-F45E485912C6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</key>
+		<key>0FA8C10D-9280-461C-98CE-16DCA6042BFA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F248026A-A988-4683-8571-2C84BFF9B520</string>
+				<string>98968B54-0D38-42A6-93A0-67D272373AAD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,24 +34,23 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5C5C89C0-0F6C-4454-B156-8BD234C389FE</key>
+		<key>49CD2E55-9242-4D08-80E1-F45E485912C6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</string>
+				<string>0FA8C10D-9280-461C-98CE-16DCA6042BFA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>AA0E996A-6755-431D-B4EB-B8E74FA41A91</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>01885340-0A10-4A39-B7CB-3EA1281A10B1</string>
+				<string>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,32 +63,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>C7186F54-B3B2-407E-8FE5-EF773C748A90</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</string>
+				<string>49CD2E55-9242-4D08-80E1-F45E485912C6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -112,30 +86,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>44C3BE8A-A7D6-4C63-9F15-7613B127C51C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CDDB6106-0481-4CE6-AEEC-4C72752E456B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -155,165 +106,6 @@
 	<string>Alfredflix</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>{var:page}
-{var:input}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>CDDB6106-0481-4CE6-AEEC-4C72752E456B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>alfredinfo</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Alfredflix info</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>page=$page
-let "page+=1"
-echo $page</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5C5C89C0-0F6C-4454-B156-8BD234C389FE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>page</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>input</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>01885340-0A10-4A39-B7CB-3EA1281A10B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>page=$page
-let "page+=1"
-
-osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
-    set configuration \"page\" to value \"$page\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
-end tell"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>alfredflix {var:input}</string>
-				<key>leftcursor</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.showalfred</string>
-			<key>uid</key>
-			<string>F248026A-A988-4683-8571-2C84BFF9B520</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -342,11 +134,7 @@ end tell"</string>
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
-    set configuration \"input\" to value \"$1\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
-end tell"
-
-./alfredflix-search $baseURL $page $1</string>
+				<string>./alfredflix-search $baseURL 1 "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -391,30 +179,64 @@ end tell"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>alfredflixp {query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>98968B54-0D38-42A6-93A0-67D272373AAD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>p</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>0FA8C10D-9280-461C-98CE-16DCA6042BFA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
 						<key>inputstring</key>
 						<string>{query}</string>
 						<key>matchcasesensitive</key>
-						<true/>
+						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>4</integer>
 						<key>matchstring</key>
-						<string>nextPage</string>
+						<string>p\d+</string>
 						<key>outputlabel</key>
-						<string>Next Page</string>
+						<string>Change page</string>
 						<key>uid</key>
-						<string>C7186F54-B3B2-407E-8FE5-EF773C748A90</string>
+						<string>AA0E996A-6755-431D-B4EB-B8E74FA41A91</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>else</string>
+				<string>Launch stream</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</string>
+			<string>49CD2E55-9242-4D08-80E1-F45E485912C6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -444,31 +266,51 @@ end tell"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>script</key>
-				<string>osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
-    set configuration \"page\" to value \"1\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
-end tell"
-
-osascript -e "tell application id \"com.runningwithcrayons.Alfred\"
-    set configuration \"input\" to value \"\" in workflow (system attribute \"alfred_workflow_bundleid\") with exportable
-end tell"</string>
-				<key>scriptargtype</key>
+				<key>keyword</key>
+				<string>alfredflixp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
 				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./alfredflix-search $baseURL {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Alfredflix Page</string>
 				<key>type</key>
 				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</string>
+			<string>05C66F0C-901F-4BCB-9014-9E0708276890</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -490,102 +332,67 @@ end tell"</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>01885340-0A10-4A39-B7CB-3EA1281A10B1</key>
+		<key>05C66F0C-901F-4BCB-9014-9E0708276890</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<real>200</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>580</real>
 		</dict>
-		<key>26F02C22-8D39-4CA8-B7BD-DD2B8D2267B2</key>
+		<key>0FA8C10D-9280-461C-98CE-16DCA6042BFA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<real>560</real>
 			<key>ypos</key>
-			<integer>245</integer>
+			<real>505</real>
 		</dict>
 		<key>44C3BE8A-A7D6-4C63-9F15-7613B127C51C</key>
 		<dict>
 			<key>note</key>
 			<string>Lauching webtorrent stream</string>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>780</real>
 			<key>ypos</key>
-			<integer>605</integer>
+			<real>625</real>
 		</dict>
-		<key>452DC0B1-1E8C-42B2-B2D6-EA546A4008BA</key>
-		<dict>
-			<key>note</key>
-			<string>Workflow variable reset</string>
-			<key>xpos</key>
-			<integer>675</integer>
-			<key>ypos</key>
-			<integer>460</integer>
-		</dict>
-		<key>5C5C89C0-0F6C-4454-B156-8BD234C389FE</key>
+		<key>49CD2E55-9242-4D08-80E1-F45E485912C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>405</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>515</real>
 		</dict>
 		<key>67A46815-EE5E-470B-9458-3C2D89B0C725</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>780</real>
 			<key>ypos</key>
-			<integer>335</integer>
+			<real>495</real>
 		</dict>
-		<key>A5A014DE-A71B-4E10-845E-7C2B9E0651A8</key>
+		<key>98968B54-0D38-42A6-93A0-67D272373AAD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>275</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>500</real>
 		</dict>
 		<key>A869E6AB-68D5-4A34-A32C-40A5199FAA06</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<real>200</real>
 			<key>ypos</key>
-			<integer>325</integer>
-		</dict>
-		<key>A8EC37A6-1484-42D4-B9BE-08D55A3B2F12</key>
-		<dict>
-			<key>xpos</key>
-			<integer>365</integer>
-			<key>ypos</key>
-			<integer>345</integer>
+			<real>440</real>
 		</dict>
 		<key>B4BDF638-BFC7-4E4C-A3C3-D96DCB15623D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<real>590</real>
 			<key>ypos</key>
-			<integer>385</integer>
-		</dict>
-		<key>B4EEEB28-2B36-4447-8A3C-F6E3119EF6D8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>645</integer>
-			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>CDDB6106-0481-4CE6-AEEC-4C72752E456B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>710</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>F248026A-A988-4683-8571-2C84BFF9B520</key>
-		<dict>
-			<key>xpos</key>
-			<integer>670</integer>
-			<key>ypos</key>
-			<integer>275</integer>
+			<real>565</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>baseURL</key>
@@ -593,7 +400,7 @@ end tell"</string>
 		<key>defaultPlayer</key>
 		<string>mpv</string>
 		<key>input</key>
-		<string></string>
+		<string>page 3</string>
 		<key>page</key>
 		<string>1</string>
 	</dict>

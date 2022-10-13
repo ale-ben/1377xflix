@@ -5,6 +5,12 @@ baseurl="$1"
 page="$2"
 query="$3"
 
+if [ -z "$query" ]; then 
+	query=$(<$cachedir/searchParam.bw)
+else 
+	echo $query > $cachedir/searchParam.bw
+fi
+
 query="$(echo $query | sed 's/ /+/g')"
 finalURL=$baseurl/search/$query/$page/
 #curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
@@ -59,14 +65,19 @@ let "nextPage+=1"
 prevPage=$page
 let "prevPage-=1"
 
-json="{\"items\": [{
+json="{\"items\": ["
+
+if [ $prevPage -ge 1 ]; then
+	jsonobj="{
         \"title\": \"Previous page\",
         \"subtitle\": \"Page $prevPage\",
-        \"arg\": \"prevPage\",
+        \"arg\": \"p$prevPage\",
         \"icon\": {
             \"path\": \"icons/alert.png\"
         }
-},"
+	},"
+	json=$json$jsonobj
+fi
 
 i=1
 while [ $i -le 20 ]; do
@@ -88,7 +99,7 @@ done
 json=$json"{
         \"title\": \"Next page\",
         \"subtitle\": \"Page $nextPage\",
-        \"arg\": \"nextPage\",
+        \"arg\": \"p$nextPage\",
         \"icon\": {
             \"path\": \"icons/alert.png\"
         }

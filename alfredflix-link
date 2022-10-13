@@ -1,11 +1,8 @@
 #!/bin/sh
 
 # Dependencies - webtorrent, mpv
-
-mkdir -p $HOME/.cache/notflix
-
 baseurl="https://www.1377x.to"
-cachedir="$HOME/.cache/notflix"
+cachedir="/tmp/alfredflix-cache"
 
 pos=$1
 
