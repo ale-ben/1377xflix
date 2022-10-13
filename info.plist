@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.aleben.notflix</string>
+	<string>com.aleben.1377xflix</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -103,7 +103,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Alfredflix</string>
+	<string>1377xFlix</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -122,7 +122,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>alfredflix</string>
+				<string>1377xflix</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -134,7 +134,7 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>./alfredflix-search $baseURL 1 "$1"</string>
+				<string>./1377xflix-search $baseURL 1 "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -142,7 +142,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Alfredflix Search</string>
+				<string>1377x Search</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -248,7 +248,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./alfredflix-link $1</string>
+				<string>./1377xflix-link $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -279,7 +279,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>alfredflixp</string>
+				<string>1377xflixp</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -291,7 +291,7 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>./alfredflix-search $baseURL {query}</string>
+				<string>./1377xflix-search $baseURL {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -299,7 +299,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Alfredflix Page</string>
+				<string>1377x Search Page</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -392,21 +392,70 @@
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>https://www.1377x.to</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Base url for the website</string>
+			<key>label</key>
+			<string>Base URL</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>baseURL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>MPV (Suggested)</string>
+						<string>mpv</string>
+					</array>
+					<array>
+						<string>VLC</string>
+						<string>vlc</string>
+					</array>
+					<array>
+						<string>Airplay</string>
+						<string>airplay</string>
+					</array>
+					<array>
+						<string>Chromecast</string>
+						<string>chromecast</string>
+					</array>
+					<array>
+						<string>DLNA</string>
+						<string>dlna</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>https://github.com/webtorrent/webtorrent-cli#usage</string>
+			<key>label</key>
+			<string>Default media player</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>defaultPlayer</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
 	<array/>
-	<key>variables</key>
-	<dict>
-		<key>baseURL</key>
-		<string>https://www.1377x.to</string>
-		<key>defaultPlayer</key>
-		<string>mpv</string>
-		<key>input</key>
-		<string>page 3</string>
-		<key>page</key>
-		<string>1</string>
-	</dict>
 	<key>version</key>
-	<string>0.1.1</string>
+	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/ale-ben/Alfredflix</string>
+	<string>https://github.com/ale-ben/1377xflix</string>
 </dict>
 </plist>
